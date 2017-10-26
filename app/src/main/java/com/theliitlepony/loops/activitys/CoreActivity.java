@@ -24,7 +24,6 @@ public class CoreActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         DEBUG_TAG = this.getClass().getSimpleName();
 
-
         loading = new Dialog(this);
         loading.requestWindowFeature(Window.FEATURE_NO_TITLE);
         loading.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));

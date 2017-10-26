@@ -17,4 +17,5 @@
     <string name="lastname">นามสกุลนักเรียน</string>
     <string name="loginbutton">เข้าสู่ระบบ</string>
     <string name="studentclass">ชั้นเรียน</string>
+    <string name="cornfirmInfo">ยืนยันข้อมูล</string>
 </resources>

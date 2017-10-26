@@ -20,10 +20,9 @@ public class SplashScreenActivity extends CoreActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(intent);
-                finish();
+                Intent intentLoginActivity = new Intent(SplashScreenActivity.this, LoginActivity.class);
+                intentLoginActivity.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intentLoginActivity);
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
         },2000);
