@@ -1,12 +1,10 @@
-package com.theliitlepony.loops.activitys;
+package com.theliitlepony.loops.activities;
 
 import android.app.Dialog;
-import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
-import android.view.inputmethod.InputMethodManager;
 
 import com.theliitlepony.loops.R;
 

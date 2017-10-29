@@ -1,15 +1,15 @@
-package com.theliitlepony.loops.activitys;
+package com.theliitlepony.loops.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.theliitlepony.loops.R;
 
-public class SelectInfoParentActivity extends CoreActivity {
+public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_select_info_parent);
+        setContentView(R.layout.activity_home);
     }
 }

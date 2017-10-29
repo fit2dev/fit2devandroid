@@ -1,4 +1,4 @@
-package com.theliitlepony.loops.activitys;
+package com.theliitlepony.loops.activities;
 
 
 import android.content.Intent;
@@ -65,8 +65,8 @@ public class LoginActivity extends CoreActivity {
             layout_student_lastname.setErrorEnabled(true);
             layout_student_lastname.setError("ชื่อและนามสกุลไม่ถูกต้อง");
         } else {
-            Intent intentSelectParentAcctivity = new Intent(LoginActivity.this,SelectInfoParentActivity.class);
-            startActivity(intentSelectParentAcctivity);
+            Intent intentSelectParentActivity = new Intent(LoginActivity.this,SelectInfoParentActivity.class);
+            startActivity(intentSelectParentActivity);
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         }
     }
