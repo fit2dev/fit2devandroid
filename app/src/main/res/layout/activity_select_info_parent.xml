@@ -1,40 +1,48 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
-    android:background="@drawable/loginbg"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context="com.theliitlepony.loops.activitys.SelectInfoParentActivity">
+    tools:context="com.theliitlepony.loops.activities.SelectInfoParentActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="40dp"
-        android:paddingLeft="70dp"
-        android:paddingRight="70dp"
-        android:paddingBottom="40dp"
-        android:layout_gravity="center"
-        android:background="@drawable/login_frame_layout"
+        android:layout_height="match_parent"
         >
        <android.support.v7.widget.AppCompatTextView
-           android:layout_width="match_parent"
+           android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:gravity="center"
+
            android:textSize="24sp"
-           android:text="เลือกชื่อของท่าน"/>
-        <android.support.v7.widget.AppCompatSpinner
-            android:layout_marginTop="50dp"
+           android:text="@string/SelectParent"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/parentRecyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/confirmBtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </android.support.v7.widget.AppCompatSpinner>
-        <Cardview
-            android:layout_marginTop="100dp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@color/colorPrimary"
-            android:text="@string/cornfirmInfo"
-            android:textSize="20sp" />
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/cornfirmInfo"
+                android:textSize="16sp" />
+        </android.support.v7.widget.CardView>
     </FrameLayout>
-</RelativeLayout>
+</LinearLayout>

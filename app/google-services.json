@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "655317513578",
+    "firebase_url": "https://loops-71298.firebaseio.com",
+    "project_id": "loops-71298",
+    "storage_bucket": "loops-71298.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:655317513578:android:7b2b7eadb9b27963",
+        "android_client_info": {
+          "package_name": "com.theliitlepony.loops"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "655317513578-33qshqspfuop1b6tq36l2fkhsftg9ggb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.theliitlepony.loops",
+            "certificate_hash": "3faf40ec6a9990de52a9813f1ed729da29c2d6d0"
+          }
+        },
+        {
+          "client_id": "655317513578-i5m87khe8sg25517go3fqlanppa5s94i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwNJ4Ark8XfVM-dtXM-26QVePceIpbVTE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "655317513578-i5m87khe8sg25517go3fqlanppa5s94i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
