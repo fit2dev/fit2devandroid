@@ -24,4 +24,11 @@
     <string name="StatusParent">สถานะ</string>
     <string name="confirmOTP">ยืนยันรหัส</string>
     <string name="confirm">ยืนยัน</string>
+    <string name="btn_yes">ใช่</string>
+    <string name="btn_no">ไม่ใช่</string>
+    <string name="btn_info_dialog_close">ปิด</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="event">กำหนดการ</string>
 </resources>

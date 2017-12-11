@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputEditText;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -34,6 +35,7 @@ public class ConfirmOTPActivity extends CoreActivity {
     private FirebaseAuth mAuth;
     private PhoneAuthProvider.ForceResendingToken mResendToken;
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
+    String otp;
 
 
     @Override
@@ -59,7 +61,6 @@ public class ConfirmOTPActivity extends CoreActivity {
                 FirebaseAuth.getInstance().signOut();
                 Log.d(TAG, "onVerificationCompleted:" + credential);
                 signInWithPhoneAuthCredential(credential);
-
             }
 
             @Override
@@ -71,10 +72,11 @@ public class ConfirmOTPActivity extends CoreActivity {
                 if (e instanceof FirebaseAuthInvalidCredentialsException) {
                     // Invalid request
                     // ...
-
+                    Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_LONG).show();
                 } else if (e instanceof FirebaseTooManyRequestsException) {
                     // The SMS quota for the project has been exceeded
                     // ...
+                    Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_LONG).show();
                 }
 
                 // Show a message and update the UI
@@ -127,9 +129,13 @@ public class ConfirmOTPActivity extends CoreActivity {
 
     @OnClick(R.id.confirmOTPBtn)
     public void onViewClicked() {
-
-        PhoneAuthCredential credential = PhoneAuthProvider.getCredential(mVerificationId, OTP.getText().toString());
-        signInWithPhoneAuthCredential(credential);
+        otp = OTP.getText().toString();
+        if (!otp.isEmpty()) {
+            PhoneAuthCredential credential = PhoneAuthProvider.getCredential(mVerificationId, otp);
+            signInWithPhoneAuthCredential(credential);
+        } else {
+            Toast.makeText(getApplicationContext(), "Please fill OTP password", Toast.LENGTH_LONG).show();
+        }
     }
 
     @Override
