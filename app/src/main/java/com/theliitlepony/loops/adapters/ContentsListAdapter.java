@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.squareup.picasso.Picasso;
 import com.theliitlepony.loops.R;
 import com.theliitlepony.loops.activities.ConfirmOTPActivity;
+import com.theliitlepony.loops.activities.HomeActivity;
 import com.theliitlepony.loops.classes.CircleTransformation;
 import com.theliitlepony.loops.classes.Singleton;
 import com.theliitlepony.loops.models.Contents;
@@ -81,7 +82,7 @@ public class ContentsListAdapter extends RecyclerView.Adapter<ContentsListAdapte
             String phone = _contents.get(position).getTelNumber();
             if (phone == "0902656574") {
                 Singleton.instance().Phonenumber = phone;
-                Intent intentConfirmOTPActivity = new Intent(_context, ConfirmOTPActivity.class);
+                Intent intentConfirmOTPActivity = new Intent(_context, HomeActivity.class);
                 _context.startActivity(intentConfirmOTPActivity);
                 _context.finish();
             } else

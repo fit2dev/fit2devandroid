@@ -3,20 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context="com.theliitlepony.loops.activities.HomeActivity">
 
-    <FrameLayout
-        android:id="@+id/home_content_layout"
-        android:layout_height="0dp"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mainViewPager"
         android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="9"
-        android:background="@color/white"/>
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     <android.support.design.widget.TabLayout
+        android:background="@color/colorPrimary"
+        android:id="@+id/mainTabLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_gravity="bottom"/>
+        android:layout_gravity="bottom"
+        app:tabTextColor="#5e5e5e"
+        app:tabSelectedTextColor="#5e5e5e"
+        />
 
 </LinearLayout>
+

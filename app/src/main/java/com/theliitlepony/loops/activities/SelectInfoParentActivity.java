@@ -66,8 +66,4 @@ public class SelectInfoParentActivity extends CoreActivity {
     }
 
 
-    @OnClick(R.id.confirmBtn)
-    public void confirmHandler() {
-
-    }
 }
